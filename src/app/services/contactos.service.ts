@@ -8,6 +8,8 @@ import { Observable } from 'rxjs';
 })
 export class ContactosService {
 
+// Prueba de funcinamiento
+
   listado: any[] = []
 
   constructor(private afs:AngularFirestore) { }
