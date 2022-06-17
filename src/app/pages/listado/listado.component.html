@@ -1,0 +1,14 @@
+<p>listado De Contactos</p>
+<table class="default">
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+    </tr>
+    <tr  *ngFor="let contacto of listado | async">
+        <td>{{contacto.firstname}}</td>
+        <td>{{contacto.lastname}}</td>
+        <td>{{contacto.age}}</td>
+    </tr>
+</table>
+<button (click)="goContactos()">Crear nuevo</button>

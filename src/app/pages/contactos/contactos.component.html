@@ -1,0 +1,63 @@
+<p>contactos works!</p>
+<div class="container">
+  <form action="action_page.php">
+
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Nombre</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." [(ngModel)]="firstname">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Apellido</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." [(ngModel)]="lastname">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="age">Edad</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="age" name="age" placeholder="Your age.." [(ngModel)]="age">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Pais</label>
+       
+
+      </div>
+      <p-colorPicker [(ngModel)]="color" name="lcolor"></p-colorPicker>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="ecuador">Ecuador</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="button" value="Submit" (click)="doGuardar()">
+    </div>
+
+  </form>
+</div>
+<button (click)="goAcercaDe()">Ir a acerca de</button>

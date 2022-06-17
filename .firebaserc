@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "parte-1-angular": {
+      "hosting": {
+        "angularPractica": [
+          "parte-1-angular"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "parte-1-angular"
+  }
+}
